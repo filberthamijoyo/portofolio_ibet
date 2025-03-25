@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Developer Portfolio
+
+A modern, responsive portfolio website built with Next.js and Tailwind CSS to showcase your projects and skills as a frontend developer.
+
+## Features
+
+- Responsive design that works on all devices
+- Dark/light mode toggle
+- Smooth scrolling navigation
+- Animated sections with Framer Motion
+- Project filtering by technology
+- Contact form with validation
+- Skills visualization
+- Experience/Education timeline
+- Modern and clean UI
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Static typing
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [Lucide Icons](https://lucide.dev/) - Icon library
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (version 18 or later)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+```
+
+2. Install the dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Personal Information
 
-## Learn More
+1. Update your name and job title in:
+   - `src/app/layout.tsx` (metadata)
+   - `src/components/layout/nav.tsx`
+   - `src/components/layout/footer.tsx`
 
-To learn more about Next.js, take a look at the following resources:
+2. Update your social media links in:
+   - `src/components/sections/contact.tsx`
+   - `src/components/layout/footer.tsx`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Content Sections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Hero Section
+- Edit the hero content in `src/components/sections/hero.tsx`
+- Replace the placeholder with your photo
 
-## Deploy on Vercel
+#### About Section
+- Update your bio and skills in `src/components/sections/about.tsx`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Projects Section
+- Add your projects in `src/components/sections/projects.tsx`
+- Each project should include:
+  - Title
+  - Description
+  - Image path
+  - Tags (technologies used)
+  - Link
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### Skills Section
+- Customize your skills in `src/components/sections/skills.tsx`
+- Update skill categories and proficiency levels
+
+#### Experience/Education Section
+- Update your education and work experience in `src/components/sections/experience.tsx`
+
+#### Contact Section
+- Modify contact information in `src/components/sections/contact.tsx`
+- To make the contact form functional, you'll need to connect it to a backend service like:
+  - [Formspree](https://formspree.io/)
+  - [Netlify Forms](https://www.netlify.com/products/forms/)
+  - Or create your own serverless function
+
+### Styling
+
+- Global styles are defined in `src/app/globals.css`
+- Theme colors can be modified in the same file
+- Component-specific styles are included in their respective files using Tailwind CSS
+
+## Deployment
+
+This portfolio can be easily deployed on:
+
+- [Vercel](https://vercel.com/) (recommended for Next.js projects)
+- [Netlify](https://www.netlify.com/)
+- [GitHub Pages](https://pages.github.com/)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)
