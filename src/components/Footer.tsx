@@ -5,6 +5,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-center md:text-left">&copy; {new Date().getFullYear()} Your Portfolio. All rights reserved.</p>
+            <p className="text-center md:text-left text-sm text-gray-400 mt-1">
+              View the <a href="https://github.com/filberthamijoyo/portofolio_ibet" className="text-blue-400 hover:text-blue-300 underline">source code on GitHub</a>
+            </p>
           </div>
           
           <div className="flex space-x-4">
